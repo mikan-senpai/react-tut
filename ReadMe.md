@@ -1,8 +1,5 @@
-
 React is a JavaScript library for building user interfaces
 It makes building complex,interactive and reactive user interfaces simpler
-
-
 
 What is a “Component"?
 Because all user interfaces in the end are made up of components
@@ -13,9 +10,7 @@ And you don't have to reuse a component
 to make it a component.
 It's just one of its traits that it is reusable.
 
-a Component in react is just a function 
-
-
+a Component in react is just a function
 
 You build these individual components
 and then you tell React how to compose them together
@@ -43,8 +38,17 @@ And if we split that code across multiple files then
 as we are going to do it though out this course
 then we'll have small pieces of code
 
-
-
 Declarative Approach
 Define the desired target state(s) and let React figure out the
-            actual JavaScript DOM instructions# react-complete-guide
+actual JavaScript DOM instructions# react-complete-guide
+
+State => state object includes any data that the component needs
+example [
+state = {
+count:0,
+address:{
+street:''
+}
+}
+
+]
