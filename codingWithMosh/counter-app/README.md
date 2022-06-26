@@ -1,3 +1,11 @@
+# the things learnt in the lecture
+
+- JSX
+- Rendering Lists
+- Conditional
+- Handling Events
+- Updating the State
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
