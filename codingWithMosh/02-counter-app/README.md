@@ -7,6 +7,19 @@
 
 ## [passing children](https://reactjs.org/docs/composition-vs-inheritance.html)
 
+## Props VS State
+
+- props is a data that we give to a component
+- state is includes data that is local or private to that component , so other components cant access that state , that is completely internal to that component
+- porps is read only
+
+## raise event
+
+\*THE COMPONENT THAT OWNS A PIECE OF THE STATE SHOULD BE THE ONE MODIFING IT
+
+- we can modify a component to reaise an event , so our components can rais events and 'onDelete' => this is the naming convention of events
+  [!image]('/assets/HandleEvents.jpg')
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
