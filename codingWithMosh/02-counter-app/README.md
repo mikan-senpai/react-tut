@@ -25,6 +25,7 @@
   How to implement this concept react=> basically we are need to add new method in counters component And pass by reference to Tat method via prop to Counter component
 
   so here the counter component is raising an avent and the counters component is handling the event.
+  [check me out for the changes](https://github.com/mikan-senpai/react-tut/commit/8ad6716325af8bfd96f4678ad1260f3edb17832f)
 
 # Getting Started with Create React App
 
