@@ -31,6 +31,15 @@
 
 React we do not update the state directly in other words We are not going to remove the particular counter from this state array counter ,Instead we can create a new array without the given counter id and Call the setstate method of our component And let react update the state by wearing the virtual Dom which we just created and physical town which is the existing older Dom
 
+## Single Source Of Truth
+
+<img src="singleSource.jpg" width=30%><img src="dog.gif" width=20%>
+
+- you remove local state and rely on props that the component needs, you refer to this kind of component as a controlled component,
+- a controlled component does not have its own local state it receives all the data via props and raises events whenever data needs to be changed
+- so this component it entirely controlled by its parent
+  <img src="controledcomp.jpg" width=30%><img src="dog.gif" width=20%>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

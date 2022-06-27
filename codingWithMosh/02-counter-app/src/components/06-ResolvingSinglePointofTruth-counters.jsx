@@ -2,7 +2,7 @@ import { Button } from "bootstrap";
 import React, { Component } from "react";
 import Counter from "./counter";
 
-class Counters05 extends Component {
+class Counters06 extends Component {
   state = {
     counters: [
       { id: 1, value: 4 },
@@ -10,6 +10,15 @@ class Counters05 extends Component {
       { id: 3, value: 0 },
       { id: 4, value: 0 },
     ],
+  };
+
+  handleIncrement = (counter) => {
+    // console.log(counter);
+    const counters = [...this.state.counters];
+    const index = counters.indexOf(counter);
+    counters[index] = { ...counter };
+    counters[index].value++;
+    this.setState({ counters });
   };
 
   handleReset = (counterValue) => {
@@ -38,6 +47,7 @@ class Counters05 extends Component {
         {this.state.counters.map((counter) => (
           <Counter
             key={counter.id}
+            onIncrement={this.handleIncrement}
             onDelete={this.handleDelete}
             // value={counter.value}
             // id={counter.id}
@@ -49,4 +59,4 @@ class Counters05 extends Component {
   }
 }
 
-export default Counters05;
+export default Counters06;

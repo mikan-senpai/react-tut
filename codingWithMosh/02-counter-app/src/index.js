@@ -10,11 +10,12 @@ import Counters02 from "./components/02-PassingDataToComponents-counters";
 import Counters03 from "./components/03-PassingChildren";
 import Counters04 from "./components/04-HandleEvents-counters";
 import Counters05 from "./components/05-UpdatingtheSate-counters";
+import Counters06 from "./components/06-ResolvingSinglePointofTruth-counters";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Counters05 />
+    <Counters06 />
   </React.StrictMode>
 );
 
