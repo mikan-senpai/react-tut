@@ -18,7 +18,13 @@
 \*THE COMPONENT THAT OWNS A PIECE OF THE STATE SHOULD BE THE ONE MODIFING IT
 
 - we can modify a component to reaise an event , so our components can rais events and 'onDelete' => this is the naming convention of events
+
   <img src="HandleEvents.jpg" width=30%><img src="dog.gif" width=20%>
+  summary : -> one component wil raise event and other component will handletheevent .this concept of raising and handling events will be seen in a lot of libreries of building ui's
+
+  How to implement this concept react=> basically we are need to add new method in counters component And pass by reference to Tat method via prop to Counter component
+
+  so here the counter component is raising an avent and the counters component is handling the event.
 
 # Getting Started with Create React App
 

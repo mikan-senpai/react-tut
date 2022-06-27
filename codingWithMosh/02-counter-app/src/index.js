@@ -8,11 +8,12 @@ import "bootstrap/dist/css/bootstrap.css";
 import Counters from "./components/01-composingComponents-counters";
 import Counters02 from "./components/02-PassingDataToComponents-counters";
 import Counters03 from "./components/03-PassingChildren";
+import Counters04 from "./components/04-HandleEvents-counters";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Counters03 />
+    <Counters04 />
   </React.StrictMode>
 );
 
