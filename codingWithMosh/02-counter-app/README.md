@@ -54,7 +54,7 @@ React we do not update the state directly in other words We are not going to rem
 - now both to the counters and the navbar component have the same parent .so we can pass data to all the children using props
 - and the state actually reside in the app component so we can pass props to both its children that is the navbar and the counters component
 
-  <img src="liftingstate.jpgg" width=30%><img src="dog.gif" width=20%>
+  <img src="liftingstate.jpg" width=30%><img src="dog.gif" width=20%>
 
 # Getting Started with Create React App
 
