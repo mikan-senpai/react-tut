@@ -1,14 +1,19 @@
-React is a JavaScript library for building user interfaces
-It makes building complex,interactive and reactive user interfaces simpler
+# React
 
-What is a “Component"?
-Because all user interfaces in the end are made up of components
-Components are in the end just a combination of HTML code,
-CSS code for styling
-and possibly JavaScript code for some logic.
-And you don't have to reuse a component
-to make it a component.
-It's just one of its traits that it is reusable.
+- is a JavaScript library for building user interfaces
+- It makes building complex,interactive and reactive user interfaces simpler
+
+![page 2]()
+[page 3](https://github.com/mikan-senpai/react-tut/tree/master/codingWithMosh/02-counter-app)
+
+- What is a “Component"?
+  Because all user interfaces in the end are made up of components
+  Components are in the end just a combination of HTML code,
+  CSS code for styling
+  and possibly JavaScript code for some logic.
+  And you don't have to reuse a component
+  to make it a component.
+  It's just one of its traits that it is reusable.
 
 a Component in react is just a function
 
@@ -38,9 +43,9 @@ And if we split that code across multiple files then
 as we are going to do it though out this course
 then we'll have small pieces of code
 
-Declarative Approach
-Define the desired target state(s) and let React figure out the
-actual JavaScript DOM instructions# react-complete-guide
+- Declarative Approach
+  Define the desired target state(s) and let React figure out the
+  actual JavaScript DOM instructions# react-complete-guide
 
 State => state object includes any data that the component needs
 example [
