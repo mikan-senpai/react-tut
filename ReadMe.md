@@ -3,8 +3,8 @@
 - is a JavaScript library for building user interfaces
 - It makes building complex,interactive and reactive user interfaces simpler
 
-![page 2]()
-[page 3](https://github.com/mikan-senpai/react-tut/tree/master/codingWithMosh/02-counter-app)
+- [page 2](https://github.com/mikan-senpai/react-tut/tree/master/codingWithMosh/counter-app)
+- [page 3](https://github.com/mikan-senpai/react-tut/tree/master/codingWithMosh/02-counter-app)
 
 - What is a “Component"?
   Because all user interfaces in the end are made up of components
