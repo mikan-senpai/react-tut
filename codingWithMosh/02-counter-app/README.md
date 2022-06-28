@@ -5,7 +5,7 @@
 - But the important part here is that data with props are being passed in a uni-directional flow. (one way from parent to child)
 - Furthermore, props data is read-only, which means that data coming from the parent should not be changed by child components.
 
-## [passing children](https://reactjs.org/docs/composition-vs-inheritance.html)
+- [passing children](https://reactjs.org/docs/composition-vs-inheritance.html)
 
 ## [Props VS State](https://www.javatpoint.com/react-state-vs-props)
 
