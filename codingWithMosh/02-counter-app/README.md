@@ -46,6 +46,8 @@ React we do not update the state directly in other words We are not going to rem
 
 ### earlier
 
+<img src="componentFlow.jpg" width=30%><img src="dog.gif" width=20%>
+
 - we pass have the state in counters component and we pass it to counter via props
 - Now when did we pass the state of the counters component to the counter component by a process this is because we have a parent-child relationship between these component
 - but as we see there is no parent- child relationship between counters component and the navbar component so how can we display the total number of counters in our navigation bar
