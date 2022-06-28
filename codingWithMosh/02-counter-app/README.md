@@ -15,7 +15,7 @@
 
 ## raise event
 
-\*THE COMPONENT THAT OWNS A PIECE OF THE STATE SHOULD BE THE ONE MODIFING IT
+\*THE COMPONENT THAT OWNS A PIECE OF STATE THAT COMPONENT SHOULD BE THE ONE MODIFING IT
 
 - we can modify a component to reaise an event , so our components can rais events and 'onDelete' => this is the naming convention of events
 
