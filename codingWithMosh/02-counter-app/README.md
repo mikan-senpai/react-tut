@@ -31,7 +31,7 @@
 
 React we do not update the state directly in other words We are not going to remove the particular counter from this state array counter ,Instead we can create a new array without the given counter id and Call the setstate method of our component And let react update the state by wearing the virtual Dom which we just created and physical town which is the existing older Dom
 
-## Single Source Of Truth
+## Single Source Of Truth and Removing local state
 
 <img src="singleSource.jpg" width=30%><img src="dog.gif" width=20%>
 
@@ -39,6 +39,22 @@ React we do not update the state directly in other words We are not going to rem
 - a controlled component does not have its own local state it receives all the data via props and raises events whenever data needs to be changed
 - so this component it entirely controlled by its parent
   <img src="controledcomp.jpg" width=30%><img src="dog.gif" width=20%>
+
+  # Multiple components in sync
+
+  <img src="componentSync.jpg" width=30%><img src="dog.gif" width=20%>
+
+### earlier
+
+- we pass have the state in counters component and we pass it to counter via props
+- Now when did we pass the state of the counters component to the counter component by a process this is because we have a parent-child relationship between these component
+- but as we see there is no parent- child relationship between counters component and the navbar component so how can we display the total number of counters in our navigation bar
+- well in this situation that this when there is no parent child relationship between two components and you want to keep them in sync you want to share data between then you need to lift the state up
+- so in this case we want to lift the state of the counters component to its parent that is app component
+- now both to the counters and the navbar component have the same parent .so we can pass data to all the children using props
+- and the state actually reside in the app component so we can pass props to both its children that is the navbar and the counters component
+
+  <img src="liftingstate.jpgg" width=30%><img src="dog.gif" width=20%>
 
 # Getting Started with Create React App
 

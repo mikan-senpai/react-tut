@@ -15,7 +15,7 @@ import Counters06 from "./components/06-ResolvingSinglePointofTruth-counters";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Counters06 />
+    <App />
   </React.StrictMode>
 );
 
