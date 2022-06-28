@@ -7,7 +7,7 @@
 
 ## [passing children](https://reactjs.org/docs/composition-vs-inheritance.html)
 
-## Props VS State
+## [Props VS State](https://www.javatpoint.com/react-state-vs-props)
 
 - props is a data that we give to a component
 - state is includes data that is local or private to that component , so other components cant access that state , that is completely internal to that component
