@@ -58,6 +58,105 @@ React we do not update the state directly in other words We are not going to rem
 
   <img src="liftingstate.jpg" width=30%><img src="dog.gif" width=20%>
 
+## lifting state up
+
+- check out this thread -> [click me](https://stackoverflow.com/questions/56609332/state-is-not-defined-no-undef-in-app-js-file)
+
+- If you want to use state in React Function Component you need hooks. Your component will look something like this when using hooks:
+
+```javascript
+import React, { useState } from "react"; // import useState too
+import logo from "./logo.svg";
+import Counters from "./components/counters";
+import Navbar from "./components/navbar";
+import "./App.css";
+
+function App() {
+  // useState function returns an array with two items. First is your state object (similar to `this.state`)
+  // and second is a function to update the state object, ie. the first item of array (similar to `this.setState`, but with minor changes, see react docs for more info, linked above)
+  const [counters, setCounters] = useState([
+    // useState to set initial counter value
+    { id: 1, value: 4 },
+    { id: 2, value: 0 },
+    { id: 3, value: 0 },
+    { id: 4, value: 0 },
+  ]);
+
+  // use setCounters method to update the counters state
+  const handleDelete = (counterId) =>
+    setCounters((counters) => counters.filter((c) => c.id !== counterId));
+
+  const handleReset = () =>
+    setCounters((counters) =>
+      counters.map((c) => {
+        c.value = 0;
+        return c;
+      })
+    );
+
+  const incrementHandle = (counter) => {
+    const counters_copy = [...counters]; // rename to counters_copy to avoid having global and local counters variable name conflict
+    const index = counters_copy.indexOf(counter);
+    counters_copy[index] = { ...counter };
+    counter_copy[index].value++;
+    setCounters({ counters_copy });
+  };
+
+  return (
+    <React.Fragment>
+      <Navbar />
+      <main className="container">
+        <Counters
+          counters={counters} // no need of this.state
+          onIncrement={incrementHandle} // no need to this
+          onDelete={handleDelete} // no need to this
+          onReset={handleReset} // no need to this
+        />
+      </main>
+    </React.Fragment>
+  );
+}
+
+export default App;
+```
+
+- Or use can use a class component instead of function and use state old way(without hooks).
+
+```javascript
+// imports stays the same
+...
+
+class App extends React.Component {  // convert to class
+constructor(props){
+  super(props);
+  this.state = {  // initial state in constructor
+    counters: [
+      { id: 1, value: 4 },
+      { id: 2, value: 0 },
+      { id: 3, value: 0 },
+      { id: 4, value: 0 }
+    ]
+  };
+
+  ...
+  // handler functions stays the same
+
+  render(){  // return goes inside render function
+    return (...);  // contents of return stays the same
+  }
+}
+
+export default App;
+// don't actually write ... , it just means what you had in your question the code stays same
+```
+
+- Hooks can't be used in class components and this.state can't be used in function component.
+  So if your component is:
+  function -> use hooks, i.e. useState, useRef etc.
+  class -> use this.state and this.setState
+
+- Also function components has better performance and code minification, so I recommend using that. Your app will perform better and will have smaller bundle size.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
