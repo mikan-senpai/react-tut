@@ -60,8 +60,6 @@ React we do not update the state directly in other words We are not going to rem
 
 ## lifting state up
 
-- check out this thread -> [click me](https://stackoverflow.com/questions/56609332/state-is-not-defined-no-undef-in-app-js-file)
-
 - If you want to use state in React Function Component you need hooks. Your component will look something like this when using hooks:
 
 ```javascript
@@ -156,6 +154,8 @@ export default App;
   class -> use this.state and this.setState
 
 - Also function components has better performance and code minification, so I recommend using that. Your app will perform better and will have smaller bundle size.
+
+took reference from [here](https://stackoverflow.com/questions/56609332/state-is-not-defined-no-undef-in-app-js-file)
 
 # Getting Started with Create React App
 
