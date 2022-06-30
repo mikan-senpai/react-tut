@@ -186,9 +186,21 @@ export default Navbar;
 ```
 
 - in situation like this we can convert this component into what we call a stateless functional component so instead of using a class to define this component , we can use a function let me show you how you can do this
+- in stateless functional component the reference “this.props” is only valid in class components In functional components unit and props as a parameter here.And can remove “this” pointer. react ill pass an argument to this navbar function at runtime
 
 ```javascript
-
+const Navbar = (props) => {
+  return (
+    <nav className="navbar navbar-light bg-light">
+      <a className="navbar-brand" href="#">
+        Navbar{" "}
+        <span className="badge badge-pill badge-secondary m-5">
+          {props.tolalCounts}
+        </span>
+      </a>
+    </nav>
+  );
+};
 ```
 
 # Getting Started with Create React App
