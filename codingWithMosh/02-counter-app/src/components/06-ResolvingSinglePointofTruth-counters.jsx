@@ -1,7 +1,7 @@
 import { Button } from "bootstrap";
 import React, { Component } from "react";
 import Counter from "./counter";
-import App from "../App";
+// import App from "../App";
 
 class Counters06 extends Component {
   render() {

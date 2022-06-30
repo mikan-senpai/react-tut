@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   render() {
-    console.log(this.props.counter.id);
+    // console.log(this.props.counter.id);
 
     return (
       <div>
@@ -29,7 +29,7 @@ class Counter extends Component {
 
   getBadgClasses = () => {
     let classes = "badge m-2 badge-";
-    return (classes += this.props.value === 0 ? "warning" : "primary");
+    return (classes += this.props.counter.value === 0 ? "warning" : "primary");
   };
 
   formatCount() {

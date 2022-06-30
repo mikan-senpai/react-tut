@@ -156,6 +156,7 @@ export default App;
 - Also function components has better performance and code minification, so I recommend using that. Your app will perform better and will have smaller bundle size.
 
 took reference from [here](https://stackoverflow.com/questions/56609332/state-is-not-defined-no-undef-in-app-js-file)
+have a quick read -> [HOOKS](https://reactjs.org/docs/hooks-intro.html)
 
 # Getting Started with Create React App
 
