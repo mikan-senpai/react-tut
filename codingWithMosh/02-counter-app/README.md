@@ -181,8 +181,6 @@ class Navbar extends Component {
     );
   }
 }
-
-export default Navbar;
 ```
 
 - in situation like this we can convert this component into what we call a stateless functional component so instead of using a class to define this component , we can use a function let me show you how you can do this
@@ -353,6 +351,8 @@ So when ever we change the state of a component or give it new props these two a
 1. componentWillUnmount
 
    -> These lifecylce hooks are the frequently used ones
+
+<img src="lifecycle.jpg" width=30%><img src="dog.gif" width=20%>
 
 # Getting Started with Create React App
 
