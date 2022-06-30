@@ -5,13 +5,13 @@ import React, { Component } from "react";
 // a stateless component
 
 // this is how you convert into a fuctional component
-const Navbar = (props) => {
+const Navbar = ({ tolalCounts }) => {
   return (
     <nav className="navbar navbar-light bg-light">
       <a className="navbar-brand" href="#">
         Navbar{" "}
         <span className="badge badge-pill badge-secondary m-5">
-          {props.tolalCounts}
+          {tolalCounts}
         </span>
       </a>
     </nav>

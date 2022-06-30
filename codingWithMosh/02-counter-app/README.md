@@ -203,6 +203,133 @@ const Navbar = (props) => {
 };
 ```
 
+# [Destucturing arguments](https://www.geeksforgeeks.org/destructuring-of-props-in-reactjs/)
+
+- What is Destructuring? => Destructuring is a characteristic of JavaScript, It is used to take out sections of data from an array or objects, We can assign them to new own variables created by the developer.
+- Here in our navbar component we have a single reference to the props object sometimesWhen working with the more Complex marker we have multiple reference to props. So we might not want to repeat “ this.props “ several times and for that the code gets messy.
+  So to reduce that we use object destructuring to destructure the props argument
+
+### syntax
+
+```javascript
+const example = ({ requiredprop }) => {
+  return <div>{requiredprop}</div>;
+};
+```
+
+How to use Destructuring? We can use the Destructuring in the following method in ReactJS:
+
+1. Using this.props method
+
+- There are many times when the value extracted during Destructuring no more exist, then in this condition we can use of default behavior of Destructuring, in this, apply a default value
+
+### without destructure
+
+```javascript
+const Navbar = (props) => {
+  return (
+    <nav className="navbar navbar-light bg-light">
+      <a className="navbar-brand" href="#">
+        Navbar{" "}
+        <span className="badge badge-pill badge-secondary m-5">
+          {props.tolalCounts}
+        </span>
+      </a>
+    </nav>
+  );
+};
+```
+
+### with destructure
+
+```javascript
+const Navbar = ({ tolalCounts }) => {
+  return (
+    <nav className="navbar navbar-light bg-light">
+      <a className="navbar-brand" href="#">
+        Navbar{" "}
+        <span className="badge badge-pill badge-secondary m-5">
+          {tolalCounts}
+        </span>
+      </a>
+    </nav>
+  );
+};
+```
+
+2. Using the Extraction method
+
+to the newly declared properties of Destructuring
+In the following code, the activeObject will be set true if it is undefined in this.props.
+
+```javascript
+Const {active, activeStatus, activeObject = true } = this.props
+
+```
+
+this is the live example from the project->
+
+### without destructure
+
+```javascript
+class Counters06 extends Component {
+  render() {
+    return (
+      <div>
+        <button
+          className="btn btn-primary btn-sm m-2"
+          onClick={this.props.onReset}
+        >
+          Reset
+        </button>
+        {this.props.counters.map((counter) => (
+          <Counter
+            key={counter.id}
+            onIncrement={this.props.onIncrement}
+            onDelete={this.props.onDelete}
+            counter={counter}
+          ></Counter>
+        ))}
+      </div>
+    );
+  }
+}
+```
+
+### with destructure
+
+```javascript
+class Counters06 extends Component {
+  render() {
+    const { counters, onReset, onIncrement, onDelete } = this.props;
+    return (
+      <div>
+        <button className="btn btn-primary btn-sm m-2" onClick={onReset}>
+          Reset
+        </button>
+        {counters.map((counter) => (
+          <Counter
+            key={counter.id}
+            onIncrement={onIncrement}
+            onDelete={onDelete}
+            // value={counter.value}
+            // id={counter.id}
+            counter={counter}
+          ></Counter>
+        ))}
+      </div>
+    );
+  }
+}
+```
+
+- A variable name that is not a copy of the property being destructured may be used. This is achieved by reassigning as shown below.
+  In the following code, the properties active, activeStatus have been destructured and reassigned as variables named generating, objectMessage.
+
+```javascript
+const { active: generating, activeStatus: objectMessage } = this.props;
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
