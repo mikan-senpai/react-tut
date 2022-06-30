@@ -158,6 +158,39 @@ export default App;
 took reference from [here](https://stackoverflow.com/questions/56609332/state-is-not-defined-no-undef-in-app-js-file)
 have a quick read -> [HOOKS](https://reactjs.org/docs/hooks-intro.html)
 
+# Stateless functional Components
+
+[click me](https://code.tutsplus.com/tutorials/stateful-vs-stateless-functional-components-in-react--cms-29541)
+
+- Now a component have a single method that is the render method and we don't have any event handlers are helper methods to calculate values or any calculation ,we only have the render method And also we don't have any state and all the data we are getting is via props
+
+```javascript
+import React, { Component } from "react";
+
+class Navbar extends Component {
+  render() {
+    return (
+      <nav className="navbar navbar-light bg-light">
+        <a className="navbar-brand" href="#">
+          Navbar
+          <span className="badge badge-pill badge-secondary m-5">
+            {this.props.tolalCounts}
+          </span>
+        </a>
+      </nav>
+    );
+  }
+}
+
+export default Navbar;
+```
+
+- in situation like this we can convert this component into what we call a stateless functional component so instead of using a class to define this component , we can use a function let me show you how you can do this
+
+```javascript
+
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
