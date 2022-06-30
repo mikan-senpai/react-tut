@@ -330,6 +330,30 @@ class Counters06 extends Component {
 const { active: generating, activeStatus: objectMessage } = this.props;
 ```
 
+## Lifecycle Hooks
+
+- Our componentgo through a few faces during their life cycle the first phase is called the mounting fees and this is when and instance of the component is created and inserted into the dom , there are a few special method that we can add to our component and react will automatically call this methods we will refer to these methods as lifecycle hooks .
+- So they allow us to hook into certain moments in the life cycle of a component and do something
+- the MOUNT phase we have we have three lifecycle hooks
+
+1. Constructor
+2. Render
+3. componentDidMount
+
+- The 2nd lifecycle phase is the UPDATE phase , and his happens when a state ot the props of a component get changed in this phase we have two lifecycle hooks
+
+1. render
+2. componentDidUpdate
+
+So when ever we change the state of a component or give it new props these two above methods are called in order.
+
+- And the last phase is the ONMOUNT phase
+  This is when a component is removed from the dom such as when we delete a counter and call the function ->
+
+1. componentWillUnmount
+
+   -> These lifecylce hooks are the frequently used ones
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
