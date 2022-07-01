@@ -77,4 +77,4 @@ const [id, setId] = useState("103");
 const [color, setColor] = useState("black");
 ```
 
-- now we dont have to worry about our states clashing , cause now we are using different hooks for an object
+- now we dont have to worry about our states clashing , cause now we are using different hooks for an object therefore you can have multiple differnt pieces of state all broken out and thus easlier to manage
