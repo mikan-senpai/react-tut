@@ -1,25 +1,10 @@
 import React, { useState } from "react";
+import UseState from "./components/useState";
 
 function App() {
-  const [value, setValue] = useState(0);
-
   return (
     <>
-      <button
-        onClick={() => {
-          setValue(value - 1);
-        }}
-      >
-        -
-      </button>
-      <span>{value}</span>
-      <button
-        onClick={() => {
-          setValue(value + 1);
-        }}
-      >
-        +
-      </button>
+      <UseState />
     </>
   );
 }

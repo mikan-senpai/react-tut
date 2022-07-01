@@ -44,3 +44,10 @@ function Example() {
 
 - useState returns a pair: the current state value and a function that lets you update it.
 - You can call this function from an event handler or somewhere else. It’s similar to this.setState in a class, except it doesn’t merge the old and new state together.
+- when you update the state the component rerenders
+
+- Anytime to modifying state Where you are actually using the previous value of state to create the new value.You need to make sure that you use the function version of Setting your state just like you use setting the state in class based component
+  `setCount((preCount) => preCount - 1);`
+
+- setState() => the parameter value is only being run one time ` const [count, setCount] = useState(() => { console.log("run function"); return 4; });`
+- If you do use an object inside your state that when you update the object you need to make sure you update all the old values as well because they don't get much together automatically and the reason that the automatic merging does not happen
