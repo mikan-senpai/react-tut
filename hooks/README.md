@@ -51,3 +51,30 @@ function Example() {
 
 - setState() => the parameter value is only being run one time ` const [count, setCount] = useState(() => { console.log("run function"); return 4; });`
 - If you do use an object inside your state that when you update the object you need to make sure you update all the old values as well because they don't get much together automatically and the reason that the automatic merging does not happen
+
+```javascript
+const [state, setState] = useState({
+  id: 131,
+  name: "mikan",
+  color: "black",
+});
+const name = state.name;
+const id = state.id;
+const color = state.color;
+```
+
+````javascript
+setState((preState) => {
+      return { ...preState, color: "blue" };
+    });```
+````
+
+- but this is not the way to use statehooks because instead of having multiple state hooks we want to have multiple state hooks
+
+```javascript
+const [name, setName] = useState("mikan");
+const [id, setId] = useState("103");
+const [color, setColor] = useState("black");
+```
+
+- now we dont have to worry about our states clashing , cause now we are using different hooks for an object
