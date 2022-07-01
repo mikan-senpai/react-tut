@@ -61,6 +61,8 @@ const [state, setState] = useState({
 const name = state.name;
 const id = state.id;
 const color = state.color;
+
+setTheme("red");
 ```
 
 ````javascript
