@@ -80,3 +80,11 @@ const [color, setColor] = useState("black");
 ```
 
 - now we dont have to worry about our states clashing , cause now we are using different hooks for an object therefore you can have multiple differnt pieces of state all broken out and thus easlier to manage
+
+## useEffect hook
+
+- A functional React component uses props and/or state to calculate the output. If the functional component makes calculations that don't target the output value, then these calculations are named side-effects
+
+- when we queary an api and get a json response we somehow want it in a react format when we change our state [here it is resourceType], here we wssenntially need what is called a sideeffect to happen when our resourceType is changed
+- now if your are used to fdo it ina class component you are probably familiar with the lifecyle methods for mounting and updating in order to create these differnt types of sideEffects
+- in case of fuctional components we dont have a mounting or unmounting or any lifeCycle hooks at all , all we have is a hook called => useEffect()
